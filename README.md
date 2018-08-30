@@ -22,7 +22,7 @@ You also need to have flask installed.
 
 In Ubuntu, Mint and Debian you can install flask like this:
 
-    $ sudo python3-pip install flask
+    $ sudo pip3 install flask
     
 Make sure git is also installed, if not you can install it like this:
 
