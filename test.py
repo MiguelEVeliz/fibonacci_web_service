@@ -1,3 +1,16 @@
+_author_ = 'Miguel Veliz'
+
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+"""
+    test.py
+    ~~~~~~~~~~~~~~
+
+   Automated testing for fibonacci_web_service
+
+"""
+
+
 import urllib.request
 import time
 start_time = time.time()
