@@ -20,6 +20,10 @@ fibonacci_number_list = []
 
 #: Function to Calculate Fibonacci numbers
 def calculate_fibonacci(n):
+    """This Function takes a number and calculate its
+    fibonacci, it number is 0 then returns 0, if number
+    is 1 then returns 1, if number is greater than 1 then
+    Function(n-1)+Function(n-2)"""
 
     if n == 0:
         return 0
@@ -32,9 +36,13 @@ def calculate_fibonacci(n):
 @app.route('/', methods=['GET'])
 #: define main function for endpoint
 def return_fibonacci():
+"""This Function calls the calculate_fibonacci function
+builds a list with each result, and prints it out in a
+formated way"""
     #: 127.0.0.1:5000/?n='int'
     number = int(request.args.get('n'))
-
+    """The format of the web address is  127.0.0.1:5000/?n='int'
+    where int is a integer for example:  127.0.0.1:5000/?n=10"""
     #: check for negative number
     if number < 0:
         return "Invalid Number, please enter a positive number"
