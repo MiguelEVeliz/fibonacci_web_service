@@ -6,7 +6,10 @@ If a negative number is used it returns an error stating so.
 
 Requirements
 ------------
+Make sure git is also installed, if not you can install it like this:
 
+    $ sudo apt-get install git  
+    
 You need Python 3.4 or later to run fibonacci_web_service.  You can have multiple Python
 versions (2.x and 3.x) installed on the same system without problems.
 
@@ -18,15 +21,19 @@ For other Linux flavors, OS X and Windows, packages are available at
 
   http://www.python.org/getit/
   
+Alternatively, i provided a apt-requirements.txt that helps with the installation of the requirements, to install the packages automatically, download the apt-requirements.txt file run the following command:
+
+
+    $ xargs -a apt-requirements.txt sudo apt-get install
+
+
 You also need to have flask installed.
 
 In Ubuntu, Mint and Debian you can install flask like this:
 
     $ sudo pip3 install flask
     
-Make sure git is also installed, if not you can install it like this:
 
-    $ sudo apt-get install git  
 
 
 Quick start
