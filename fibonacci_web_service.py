@@ -1,3 +1,16 @@
+_author_ ='Miguel Veliz'
+
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+"""
+    fibonacci_web_service.py
+    ~~~~~~~~~~~~~~
+
+   RESTful web service that accepts a positive number, 
+   as input and returns the first n Fibonacci numbers
+
+"""
+
 from flask import Flask
 from flask import request
 
@@ -19,6 +32,7 @@ def calculate_fibonacci(n):
 @app.route('/', methods=['GET'])
 #: define main function for endpoint
 def return_fibonacci():
+    #: 127.0.0.1:5000/?n='int'
     number = int(request.args.get('n'))
 
     #: check for negative number
@@ -27,13 +41,14 @@ def return_fibonacci():
     else:
         #: clear list for multiple calls
         fibonacci_number_list.clear()
-        
+
         #: Calculates the fibonacci number and adds to a list
         for x in range(number+1):
             fibonacci_number_list.append(calculate_fibonacci(x))
 
         #: returns the list of fibonacci number formated.
-        return str(fibonacci_number_list)
+        return str(fibonacci_number_list).strip('[]')
+
 
 #: runs the application and defines the port number
 app.run(port=5000)
