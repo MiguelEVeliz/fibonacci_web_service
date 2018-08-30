@@ -25,6 +25,9 @@ def return_fibonacci():
     if number < 0:
         return "Invalid"
     else:
+        #: clear list for multiple calls
+        fibonacci_number_list.clear()
+        
         #: Calculates the fibonacci number and adds to a list
         for x in range(number+1):
             fibonacci_number_list.append(calculate_fibonacci(x))
