@@ -46,3 +46,17 @@ Another option is to use the curl command like this:
 
     $ curl -i http://127.0.0.1:5000/?n=10
     
+Quick start Docker
+-----------    
+To run the latest fibonacci_web_service from a docker container run the following command:
+
+
+    $ sudo docker run -p 5000:5000 migueleveliz/fibonacci_web_service
+ 
+ 
+ Use a webbrowser and go to http://127.0.0.1:5000/?n='x' where is x is an integer for example: http://127.0.0.1:5000/?n=10
+
+Another option is to use the curl command like this:
+
+    $ curl -i http://127.0.0.1:5000/?n=10
+
