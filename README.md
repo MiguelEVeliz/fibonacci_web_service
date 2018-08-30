@@ -60,3 +60,11 @@ Another option is to use the curl command like this:
 
     $ curl -i http://127.0.0.1:5000/?n=10
 
+Testing and Troubleshooting
+-----------
+To troubleshoot the fibonacci_web_service i have included an automatic test program, to run it use the following command:
+
+    $ python3 test.py
+
+This will run 4 automated test and report result and time it took to run the specif test.
+ 
