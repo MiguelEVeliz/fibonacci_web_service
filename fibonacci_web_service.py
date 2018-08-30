@@ -23,7 +23,7 @@ def return_fibonacci():
 
     #: check for negative number
     if number < 0:
-        return "Invalid"
+        return "Invalid Number, please enter a positive number"
     else:
         #: clear list for multiple calls
         fibonacci_number_list.clear()
