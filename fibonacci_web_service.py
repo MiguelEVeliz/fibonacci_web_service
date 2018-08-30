@@ -40,11 +40,10 @@ def calculate_fibonacci(n):
 @app.route('/', methods=['GET'])
 #: define main function for endpoint
 def return_fibonacci():
-
-
-"""This Function calls the calculate_fibonacci function
-builds a list with each result, and prints it out in a
-formatted way"""
+    """This Function calls the calculate_fibonacci function
+    builds a list with each result, and prints it out in a
+    formatted way """
+    
 #: 127.0.0.1:5000/?n='int'
     number = int(request.args.get('n'))
     """The format of the web address is  127.0.0.1:5000/?n='int'
