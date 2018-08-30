@@ -18,9 +18,9 @@ For other Linux flavors, OS X and Windows, packages are available at
 
   http://www.python.org/getit/
   
-You also need to have flask install.
+You also need to have flask installed.
 
-In Ubuntu, Mint and Debian you can install Python 3 like this:
+In Ubuntu, Mint and Debian you can install flask like this:
 
     $ sudo python3-pip install flask
     
