@@ -39,3 +39,10 @@ To get the latest fibonacci_web_service run the following command:
 To run fibonacci_web_service run the following commnad:
 
     $ python3 fibonacci_web_service.py
+
+Use a webbrowser and go to http://127.0.0.1:5000/?n='x' where is x is an integer for example: http://127.0.0.1:5000/?n=10
+
+Another option is to use the curl command like this:
+
+    $ curl -i http://127.0.0.1:5000/?n=10
+    
