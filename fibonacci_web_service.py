@@ -1,4 +1,4 @@
-_author_ ='Miguel Veliz'
+_author_ = 'Miguel Veliz'
 
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
@@ -19,6 +19,8 @@ app = Flask(__name__)
 fibonacci_number_list = []
 
 #: Function to Calculate Fibonacci numbers
+
+
 def calculate_fibonacci(n):
     """This Function takes a number and calculate its
     fibonacci, it number is 0 then returns 0, if number
@@ -33,13 +35,17 @@ def calculate_fibonacci(n):
         return calculate_fibonacci(n-1)+calculate_fibonacci(n-2)
 
 #: create the / end point
+
+
 @app.route('/', methods=['GET'])
 #: define main function for endpoint
 def return_fibonacci():
+
+
 """This Function calls the calculate_fibonacci function
 builds a list with each result, and prints it out in a
-formated way"""
-    #: 127.0.0.1:5000/?n='int'
+formatted way"""
+#: 127.0.0.1:5000/?n='int'
     number = int(request.args.get('n'))
     """The format of the web address is  127.0.0.1:5000/?n='int'
     where int is a integer for example:  127.0.0.1:5000/?n=10"""
